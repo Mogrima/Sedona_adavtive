@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Седона: отзывы</title>
+</head>
+<body>
+  <header class="page-header">
+    <p class="page-header__logo">
+      <img src="img/logo.png" alt="Город Седона" class="page-header__logo-image">
+    </p>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Закрыть</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html" class="main-nav__link">Фото и видео</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Html Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="page-main__main-title">Оставьте свой отзыв</h1>
+    <p class="page-main__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <section class="feedback">
+      <h2 class="visually-hidden">Форма заполнения отзыва</h2>
+      <form class="feedback__form feedback-form" action="#" method="post">
+      <fieldset class="feedback__form feedback-form" action="#" method="post">
+        <legend class="feedback-form__title">Представьтесь:</legend>
+        <label for="name" class="feedback-form__label">Имя<sup>*</sup>:</label>
+        <input id="name" type="text" class="feedback-form__input" name="name" placeholder="Петр">
+
+        <label for="surname" class="feedback-form__label">Фамилия<sup>*</sup>:</label>
+        <input id="surname" type="text" class="feedback-form__input" name="surname" placeholder="Иванов">
+
+        <label for="patronymic" class="feedback-form__label">Отчество:</label>
+        <input id="patronymic" type="text" class="feedback-form__input" name="patronymic" placeholder="Александрович">
+      </fieldset>
+      <fieldset class="feedback__form feedback-form" action="#" method="post">
+        <legend class="feedback-form__title">Ваше общее впечатление:</legend>
+
+        <input class="feedback-form__input" type="radio" value="plus" name="generalEffect" id="plus" checked>
+        <label class="feedback-form__label" for="plus">Скорее положительное</label>
+
+        <input class="feedback-form__input" type="radio" value="minus" name="generalEffect" id="minus">
+        <label class="feedback-form__label" for="minus">Скорее отрицательное</label>
+
+        <input class="feedback-form__input" type="radio" value="zero" name="generalEffect" id="zero">
+        <label class="feedback-form__label" for="zero">Затрудняюсь ответить</label>
+      </fieldset>
+      <fieldset class="feedback__form feedback-form" action="#" method="post">
+        <legend class="feedback-form__title">Контактная информация:</legend>
+        <label for="phone" class="feedback-form__label">Телефон:<sup>*</sup>:</label>
+        <input id="phone" type="phone" class="feedback-form__input" name="phone" placeholder="Введите телефон">
+
+        <label for="email" class="feedback-form__label">Электронная почта<sup>*</sup>:</label>
+        <input id="email" type="text" class="feedback-form__input" name="email" placeholder="Введите e-mail">
+      </fieldset>
+      <fieldset class="feedback__form feedback-form" action="#" method="post">
+        <legend class="feedback-form__title">Посещенные достопримечательности:</legend>
+        <input id="DevilBridge" type="checkbox" name="attraction" value="DevilBridge" checked>
+        <label for="DevilBridge" class="feedback-form__label">Мост Дьявола</label>
+
+        <input id="Hora-Bell" type="checkbox" name="attraction" value="Hora-Bell" checked>
+        <label for="Hora-Bell" class="feedback-form__label">Гора-Колокол</label>
+
+        <input id="Slide-park" type="checkbox" name="attraction" value="Slide-park" checked>
+        <label for="Slide-park" class="feedback-form__label">Слайд-парк</label>
+
+        <input id="RedRocks" type="checkbox" name="attraction" value="RedRocks">
+        <label for="RedRocks" class="feedback-form__label">Красные скалы</label>
+      </fieldset>
+      <fieldset class="feedback__form feedback-form" action="#" method="post">
+        <legend class="feedback-form__title">Опишите свои эмоции:</legend>
+        <label id="emotion" class="visually-hidden">Опишите подробно все свои восторги</label>
+        <textarea id="emotion" name="emotion" cols="30" rows="10" name="emotion-">Опишите подробно все свои восторги</textarea>
+      </fieldset>
+      <button class="button feedback__button" type="submit">Отправить отзыв</button>
+      <small class="feedback__necessary"> <sup>*</sup> — обязательные поля</small>
+    </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__label-sedona label-sedona">
+        <a href="#" class="label-sedona__hashtag">#visitSEDONA</a>
+      </div>
+      <div class="page-footer__social social">
+        <h2 class="visually-hidden">Седона в социальных сетях</h2>
+        <ul class="social__list">
+          <li class="social__item social__item--twitter">
+            <a href="#" class="social__link">Твиттер</a>
+          </li>
+          <li class="social__item social__item--facebook">
+            <a href="#" class="social__link">Фейсбук</a>
+          </li>
+          <li class="social__item social__item--youtube">
+            <a href="#" class="social__link">Ютуб</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a href="#" class="copyright__link">
+          <img src="img/copyright-image.png" alt="HTML Academy" class="copyright__image" width="27" height="34">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
