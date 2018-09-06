@@ -47,18 +47,6 @@
         <input id="patronymic" type="text" class="feedback-form__input" name="patronymic" placeholder="Александрович">
       </fieldset>
       <fieldset class="feedback-form__list">
-        <legend class="feedback-form__subtitle">Ваше общее впечатление:</legend>
-
-        <input class="feedback-form__input" type="radio" value="plus" name="generalEffect" id="plus" checked>
-        <label class="feedback-form__label" for="plus">Скорее положительное</label>
-
-        <input class="feedback-form__input" type="radio" value="minus" name="generalEffect" id="minus">
-        <label class="feedback-form__label" for="minus">Скорее отрицательное</label>
-
-        <input class="feedback-form__input" type="radio" value="zero" name="generalEffect" id="zero">
-        <label class="feedback-form__label" for="zero">Затрудняюсь ответить</label>
-      </fieldset>
-      <fieldset class="feedback-form__list">
         <legend class="feedback-form__subtitle">Контактная информация:</legend>
         <label for="phone" class="feedback-form__label">Телефон:<sup>*</sup>:</label>
         <input id="phone" type="tel" class="feedback-form__input" name="phone" placeholder="Введите телефон">
@@ -67,18 +55,47 @@
         <input id="email" type="text" class="feedback-form__input" name="email" placeholder="Введите e-mail">
       </fieldset>
       <fieldset class="feedback-form__list">
+        <legend class="feedback-form__subtitle">Ваше общее впечатление:</legend>
+        <ul class="feedback-form__impression impression-list">
+          <li class="feedback-form__item impression-item">
+            <input class="feedback-form__input" type="radio" value="plus" name="generalEffect" id="plus" checked>
+            <label class="feedback-form__label" for="plus">Скорее положительное</label>
+          </li>
+
+          <li class="feedback-form__item impression-item">
+            <input class="feedback-form__input" type="radio" value="minus" name="generalEffect" id="minus">
+            <label class="feedback-form__label" for="minus">Скорее отрицательное</label>
+          </li>
+
+         <li class="feedback-form__item impression-item">
+            <input class="feedback-form__input" type="radio" value="zero" name="generalEffect" id="zero">
+           <label class="feedback-form__label" for="zero">Затрудняюсь ответить</label>
+         </li>
+        </ul>
+      </fieldset>
+      <fieldset class="feedback-form__list">
         <legend class="feedback-form__subtitle">Посещенные достопримечательности:</legend>
-        <input id="DevilBridge" type="checkbox" name="attraction" value="DevilBridge" checked>
-        <label for="DevilBridge" class="feedback-form__label">Мост Дьявола</label>
+        <ul class="feedbacl-form__attraction attraction-list">
+          <li class="feedback-form__item attraction__item">
+            <input id="DevilBridge" type="checkbox" name="attraction" value="DevilBridge" checked>
+            <label for="DevilBridge" class="feedback-form__label">Мост Дьявола</label>
+          </li>
 
-        <input id="Hora-Bell" type="checkbox" name="attraction" value="Hora-Bell" checked>
-        <label for="Hora-Bell" class="feedback-form__label">Гора-Колокол</label>
+          <li class="feedback-form__item attraction__item">
+            <input id="Hora-Bell" type="checkbox" name="attraction" value="Hora-Bell" checked>
+            <label for="Hora-Bell" class="feedback-form__label">Гора-Колокол</label>
+          </li>
 
-        <input id="Slide-park" type="checkbox" name="attraction" value="Slide-park" checked>
-        <label for="Slide-park" class="feedback-form__label">Слайд-парк</label>
+         <li class="feedback-form__item attraction__item">
+            <input id="Slide-park" type="checkbox" name="attraction" value="Slide-park" checked>
+           <label for="Slide-park" class="feedback-form__label">Слайд-парк</label>
+         </li>
 
-        <input id="RedRocks" type="checkbox" name="attraction" value="RedRocks">
-        <label for="RedRocks" class="feedback-form__label">Красные скалы</label>
+          <li class="feedback-form__item attraction__item">
+            <input id="RedRocks" type="checkbox" name="attraction" value="RedRocks">
+            <label for="RedRocks" class="feedback-form__label">Красные скалы</label>
+          </li>
+        </ul>
       </fieldset>
       <fieldset class="feedback-form__list">
         <legend class="feedback-form__subtitle">Опишите свои эмоции:</legend>
