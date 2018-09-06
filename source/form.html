@@ -35,8 +35,8 @@
     <section class="feedback">
       <h2 class="visually-hidden">Форма заполнения отзыва</h2>
       <form class="feedback__form feedback-form" action="#" method="post">
-      <fieldset class="feedback__form feedback-form" action="#" method="post">
-        <legend class="feedback-form__title">Представьтесь:</legend>
+      <fieldset class="feedback-form__list">
+        <legend class="feedback-form__subtitle">Представьтесь:</legend>
         <label for="name" class="feedback-form__label">Имя<sup>*</sup>:</label>
         <input id="name" type="text" class="feedback-form__input" name="name" placeholder="Петр">
 
@@ -46,8 +46,8 @@
         <label for="patronymic" class="feedback-form__label">Отчество:</label>
         <input id="patronymic" type="text" class="feedback-form__input" name="patronymic" placeholder="Александрович">
       </fieldset>
-      <fieldset class="feedback__form feedback-form" action="#" method="post">
-        <legend class="feedback-form__title">Ваше общее впечатление:</legend>
+      <fieldset class="feedback-form__list">
+        <legend class="feedback-form__subtitle">Ваше общее впечатление:</legend>
 
         <input class="feedback-form__input" type="radio" value="plus" name="generalEffect" id="plus" checked>
         <label class="feedback-form__label" for="plus">Скорее положительное</label>
@@ -58,16 +58,16 @@
         <input class="feedback-form__input" type="radio" value="zero" name="generalEffect" id="zero">
         <label class="feedback-form__label" for="zero">Затрудняюсь ответить</label>
       </fieldset>
-      <fieldset class="feedback__form feedback-form" action="#" method="post">
-        <legend class="feedback-form__title">Контактная информация:</legend>
+      <fieldset class="feedback-form__list">
+        <legend class="feedback-form__subtitle">Контактная информация:</legend>
         <label for="phone" class="feedback-form__label">Телефон:<sup>*</sup>:</label>
-        <input id="phone" type="phone" class="feedback-form__input" name="phone" placeholder="Введите телефон">
+        <input id="phone" type="tel" class="feedback-form__input" name="phone" placeholder="Введите телефон">
 
         <label for="email" class="feedback-form__label">Электронная почта<sup>*</sup>:</label>
         <input id="email" type="text" class="feedback-form__input" name="email" placeholder="Введите e-mail">
       </fieldset>
-      <fieldset class="feedback__form feedback-form" action="#" method="post">
-        <legend class="feedback-form__title">Посещенные достопримечательности:</legend>
+      <fieldset class="feedback-form__list">
+        <legend class="feedback-form__subtitle">Посещенные достопримечательности:</legend>
         <input id="DevilBridge" type="checkbox" name="attraction" value="DevilBridge" checked>
         <label for="DevilBridge" class="feedback-form__label">Мост Дьявола</label>
 
@@ -80,10 +80,10 @@
         <input id="RedRocks" type="checkbox" name="attraction" value="RedRocks">
         <label for="RedRocks" class="feedback-form__label">Красные скалы</label>
       </fieldset>
-      <fieldset class="feedback__form feedback-form" action="#" method="post">
-        <legend class="feedback-form__title">Опишите свои эмоции:</legend>
-        <label id="emotion" class="visually-hidden">Опишите подробно все свои восторги</label>
-        <textarea id="emotion" name="emotion" cols="30" rows="10" name="emotion-">Опишите подробно все свои восторги</textarea>
+      <fieldset class="feedback-form__list">
+        <legend class="feedback-form__subtitle">Опишите свои эмоции:</legend>
+        <label for="emotion" class="visually-hidden">Опишите подробно все свои восторги</label>
+        <textarea id="emotion" name="emotion" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
       </fieldset>
       <button class="button feedback__button" type="submit">Отправить отзыв</button>
       <small class="feedback__necessary"> <sup>*</sup> — обязательные поля</small>
