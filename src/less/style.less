@@ -1,1 +1,39 @@
 @import "fonts.less";
+@import "variables.less";
+@import "mixins.less";
+
+@import "page-header.less";
+@import "main-nav.less";
+@import "page-main.less";
+@import "advantages.less";
+@import "features.less";
+@import "booking.less";
+@import "button.less";
+@import "page-footer.less";
+@import "label-sedona.less";
+@import "social.less";
+@import "copyright.less";
+
+body {
+  font-family: 'PT Sans Regular';
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.visually-hidden:not(:focus):not(active),
+input[type="checkbox"].visually-hidden,
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
