@@ -9,4 +9,16 @@
   text-decoration: none;
   background-color: @blue;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: @hoverblue;
+  }
+  &:active {
+    color: fade(@color-textlight, 30%);
+    background-color: @activeblue;
+  }
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
