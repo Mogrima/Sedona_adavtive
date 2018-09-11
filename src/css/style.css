@@ -15,14 +15,32 @@
 /* Семейства шрифтов */
 /* Цвета */
 /* Размеры шрифтов */
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 281px;
+  margin: 0 auto;
+  padding: 10px 47px;
+  font-size: 21px;
+  color: #ffffff;
+  line-height: 26px;
+  font-family: 'PT Sans Bold';
+  text-decoration: none;
+  background-color: #81b3d2;
+}
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 .main-nav__link {
-  font-size: #000000;
-  color: #333333;
+  font-size: 18px;
+  color: #000000;
   line-height: 26px;
   font-family: 'PT Sans Bold';
   text-decoration: none;
@@ -31,7 +49,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
-  font-size: 21px;
+  font-size: 18px;
   color: #000000;
   line-height: 26px;
   text-align: center;
@@ -63,7 +81,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 15px;
-  font-size: 21px;
+  font-size: 18px;
   color: #000000;
   line-height: 26px;
 }
@@ -106,7 +124,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
-  font-size: 21px;
+  font-size: 18px;
   color: #000000;
   line-height: 26px;
 }
@@ -125,7 +143,7 @@
   padding: 0;
   margin-bottom: 30px;
   padding-top: 55px;
-  font-size: 30px;
+  font-size: 21px;
   color: #000000;
   line-height: 26px;
   font-family: 'PT Sans Bold';
@@ -144,16 +162,6 @@
 .booking__map {
   margin: 0;
   padding: 0;
-}
-.button {
-  display: block;
-  padding: 10px 135px;
-  font-size: 21px;
-  color: #ffffff;
-  line-height: 26px;
-  font-family: 'PT Sans Bold';
-  text-decoration: none;
-  background-color: #81b3d2;
 }
 .page-footer__label-sedona {
   padding-top: 40px;
@@ -182,7 +190,7 @@
   background-color: #81b3d2;
 }
 body {
-  font-family: 'PT Sans Regular';
+  font-family: 'PT Sans Regular', Arial, Helvetica, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
 }
