@@ -27,6 +27,10 @@
   font-family: 'PT Sans Bold';
   text-decoration: none;
   background-color: #81b3d2;
+  cursor: pointer;
+}
+.page-header__logo {
+  text-align: center;
 }
 .main-nav__list {
   margin: 0;
@@ -39,16 +43,23 @@
   right: 0;
 }
 .main-nav__link {
+  display: block;
   font-size: 18px;
-  color: #000000;
+  color: #ffffff;
   line-height: 26px;
+  padding: 15px 120px;
   font-family: 'PT Sans Bold';
+  text-align: center;
   text-decoration: none;
+  background-color: #81b3d2;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
 }
 .page-main__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-top: 43px;
+  margin-bottom: 35px;
   font-size: 18px;
   color: #000000;
   line-height: 26px;
@@ -57,7 +68,7 @@
 .advantages__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 43px;
   font-size: 14px;
   color: #333333;
   line-height: 26px;
@@ -69,7 +80,6 @@
   list-style: none;
 }
 .advantages__item {
-  padding-top: 55px;
   padding-bottom: 1px;
   text-align: center;
   background-color: #eeeeee;
@@ -81,6 +91,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 15px;
+  padding-top: 43px;
   font-size: 18px;
   color: #000000;
   line-height: 26px;
@@ -91,7 +102,7 @@
 .advantages__number {
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   font-size: 14px;
   color: #333333;
   line-height: 21px;
@@ -102,7 +113,7 @@
 .advantages__description {
   margin: 0;
   padding: 0;
-  margin-bottom: 60px;
+  margin-bottom: 42px;
   font-size: 14px;
   color: #333333;
   line-height: 21px;
@@ -110,20 +121,29 @@
 .advantages__description--white {
   color: #ffffff;
 }
+.advantages__town {
+  width: 320px;
+  height: 260px;
+  background-image: url("../img/advantages/photo-city@1x.jpg");
+}
+.advantages__bridge {
+  width: 320px;
+  height: 260px;
+  background-image: url("../img/advantages/photo-bridge@1x.jpg");
+}
 .features__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 .features__item {
-  padding-top: 57px;
-  padding-bottom: 80px;
   background-color: #ffffff;
 }
 .features__subtitle {
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  padding-top: 40px;
   font-size: 18px;
   color: #000000;
   line-height: 26px;
@@ -131,6 +151,7 @@
 .features__text {
   margin: 0;
   padding: 0;
+  padding-bottom: 35px;
   font-size: 14px;
   color: #333333;
   line-height: 21px;
@@ -141,8 +162,8 @@
 .booking__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
-  padding-top: 55px;
+  margin-bottom: 25px;
+  padding-top: 30px;
   font-size: 21px;
   color: #000000;
   line-height: 26px;
@@ -151,17 +172,20 @@
 .booking__description {
   margin: 0;
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 38px;
   font-size: 14px;
   color: #333333;
   line-height: 24px;
 }
 .booking__button {
-  margin-bottom: 65px;
+  margin-bottom: 50px;
 }
 .booking__map {
   margin: 0;
   padding: 0;
+}
+.page-footer {
+  text-align: center;
 }
 .page-footer__label-sedona {
   padding-top: 40px;
