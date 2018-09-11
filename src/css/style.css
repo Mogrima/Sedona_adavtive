@@ -18,10 +18,10 @@
 .button {
   display: block;
   box-sizing: border-box;
-  width: 281px;
+  width: 260px;
   margin: 0 auto;
   padding: 10px 47px;
-  font-size: 21px;
+  font-size: 18px;
   color: #ffffff;
   line-height: 26px;
   font-family: 'PT Sans Bold';
@@ -280,6 +280,7 @@
   text-transform: none;
 }
 .feedback-form__input {
+  box-sizing: border-box;
   padding: 18px 57px 18px 21px;
   background-color: #f2f2f2;
   border: none;
@@ -308,6 +309,15 @@
   color: #000000;
   line-height: 26px;
 }
+.feedback-form__input:hover {
+  background-color: #e5e5e5;
+}
+.feedback-form__input:active,
+.feedback-form__input:focus {
+  outline: 0;
+  background-color: #ffffff;
+  border: 4px solid #e5e5e5;
+}
 .feedbacl-form__textarea {
   box-sizing: border-box;
   width: 278px;
@@ -320,6 +330,15 @@
   line-height: 26px;
   background-color: #f2f2f2;
   border: none;
+}
+.feedbacl-form__textarea:hover {
+  background-color: #e5e5e5;
+}
+.feedbacl-form__textarea:active,
+.feedbacl-form__textarea:focus {
+  outline: 0;
+  background-color: #ffffff;
+  border: 4px solid #e5e5e5;
 }
 .feedback__button {
   margin-bottom: 35px;
@@ -334,6 +353,7 @@
   display: block;
   margin-bottom: 40px;
   padding-left: 64px;
+  cursor: pointer;
 }
 .feedback-form__impression-indicator {
   position: absolute;
@@ -366,6 +386,13 @@
   background-color: #333333;
   border-radius: 50%;
 }
+.feedback-form__radio:hover + .feedback-form__impression-indicator,
+.feedback-form__radio:focus + .feedback-form__impression-indicator {
+  background-color: #e5e5e5;
+}
+.feedback-form__radio:active + .feedback-form__impression-indicator {
+  background-color: #d5d5d5;
+}
 .feedbacl-form__attraction-list {
   margin: 0;
   padding: 0;
@@ -376,6 +403,7 @@
   display: block;
   margin-bottom: 55px;
   padding-left: 80px;
+  cursor: pointer;
 }
 .feedback-form__attraction-indicator {
   position: absolute;
@@ -385,6 +413,13 @@
   height: 55px;
   background-color: #f2f2f2;
   border-radius: 5px;
+}
+.feedback-form__checkbox:hover + .feedback-form__attraction-indicator,
+.feedback-form__checkbox:focus + .feedback-form__attraction-indicator {
+  background-color: #e5e5e5;
+}
+.feedback-form__checkbox:active + .feedback-form__attraction-indicator {
+  background-color: #d5d5d5;
 }
 .feedback-form__checkbox:checked + .feedback-form__attraction-indicator::before {
   content: "";
@@ -400,6 +435,34 @@
   font-size: 14px;
   color: #333333;
   line-height: 26px;
+}
+.modal-send {
+  background-color: #ffffff;
+}
+.modal-send__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  padding-top: 45px;
+  font-family: 'PT Sans Bold';
+  font-size: 18px;
+  color: #000000;
+  line-height: 26px;
+  text-align: center;
+}
+.modal-sent__text {
+  line-height: 24px;
+  text-align: center;
+}
+.modal-sent__text--failure {
+  margin-bottom: 28px;
+}
+.modal-sent__text--success {
+  margin-bottom: 38px;
+}
+.modal-sent__button-wrapper {
+  padding: 20px;
+  background-color: #d5d5d5;
 }
 body {
   font-family: 'PT Sans Regular', Arial, Helvetica, sans-serif;

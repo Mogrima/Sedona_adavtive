@@ -29,6 +29,9 @@
         </ul>
       </div>
     </nav>
+    <div class="page-header__bg page-header__bg--inner">
+      <img src="img/page-header/back-mobile.jpg" width="320" height="160" alt="Добро пожаловать в Седону">
+    </div>
   </header>
   <main class="page-main">
     <h1 class="page-main__title">Оставьте свой отзыв</h1>
@@ -152,13 +155,15 @@
   <section class="modal modal-send">
     <h2 class="visually-hidden">Вы заполнели не все поля формы</h2>
     <p class="modal-send__title">Что-то пошло не так!</p>
-    <p class="modal-sent__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <p class="modal-sent__text modal-sent__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     <button class="button modal-send__button" type="button">Ок</button>
   </section>
   <section class="modal modal-send">
     <h2 class="modal-send__title">Ваш отзыв отправлен!</h2>
-    <p class="modal-sent__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-    <button class="button modal-send__button" type="button">Закрыть окно</button>
+    <p class="modal-sent__text modal-sent__text--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    <div class="modal-sent__button-wrapper">
+      <button class="button modal-send__button" type="button">Закрыть окно</button>
+    </div>
   </section>
 </body>
 </html>
