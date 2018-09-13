@@ -3,16 +3,31 @@
 }
 
 .social__link {
-  color: @color-textlight;
   text-decoration: none;
-  background-color: @blue;
 
-  &:hover,
+  /* &:hover,
   &focus {
     background-color: @hoverblue;
+    text-decoration: none;
   }
   &:active {
     color: fade(@color-textlight, 30%);
     background-color: @activeblue;
+  } */
+}
+
+.social__icon {
+  background-color: #81b3d2;
+  path {
+    fill: @white;
+  }
+  &--twitter {
+    padding: 17px 13px;
+  }
+  &--facebook {
+    padding: 14px 18px;
+  }
+  &--youtube {
+    padding: 17px 13px 17px 12px;
   }
 }

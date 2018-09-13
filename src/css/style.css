@@ -42,7 +42,20 @@
   background-color: #e5e5e5;
 }
 .page-header__logo {
+  margin: 0;
+  padding: 0;
   text-align: center;
+}
+.page-header__img-title {
+  margin-left: 40px;
+  margin-top: 50px;
+}
+.page-header__bg--inner {
+  width: 320px;
+  height: 160px;
+  background-image: url("../img/page-header/bg-back-mobile@1x.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .main-nav__list {
   margin: 0;
@@ -239,17 +252,31 @@
   list-style: none;
 }
 .social__link {
-  color: #ffffff;
   text-decoration: none;
+  /* &:hover,
+  &focus {
+    background-color: @hoverblue;
+    text-decoration: none;
+  }
+  &:active {
+    color: fade(@color-textlight, 30%);
+    background-color: @activeblue;
+  } */
+}
+.social__icon {
   background-color: #81b3d2;
 }
-.social__link:hover,
-.social__linkfocus {
-  background-color: #669ec0;
+.social__icon path {
+  fill: #ffffff;
 }
-.social__link:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #5496bd;
+.social__icon--twitter {
+  padding: 17px 13px;
+}
+.social__icon--facebook {
+  padding: 14px 18px;
+}
+.social__icon--youtube {
+  padding: 17px 13px 17px 12px;
 }
 .feedback-form__list {
   margin: 0;
