@@ -472,9 +472,55 @@
 .photo__content {
   margin: 0;
   padding: 0;
+  padding-top: 23px;
+  border-top: 1px solid #e5e5e5;
+}
+.photo__title-image {
+  margin-bottom: 9px;
+  font-family: 'PT Sans Bold';
+  color: #000000;
+}
+.photo__image {
+  margin-bottom: 20px;
+}
+.photo__author-image {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+.photo__like-link {
+  display: block;
+  margin-bottom: 22px;
+  text-decoration: none;
+}
+.photo__like-icon path {
+  fill: #b2b2b2;
+}
+.photo__likes {
+  margin-left: 15px;
+  font-family: 'PT Sans Bold';
+  font-size: 14px;
+  color: #000000;
+  line-height: 24px;
 }
 .presentation {
+  padding-top: 37px;
   text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+.presentation__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  font-family: 'PT Sans Bold';
+  font-size: 18px;
+  color: #000000;
+  line-height: 26px;
+}
+.presentation__description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 37px;
 }
 .modal-send {
   background-color: #ffffff;
