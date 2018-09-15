@@ -463,6 +463,19 @@
   color: #333333;
   line-height: 26px;
 }
+.photo__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.photo__content {
+  margin: 0;
+  padding: 0;
+}
+.presentation {
+  text-align: center;
+}
 .modal-send {
   background-color: #ffffff;
 }
