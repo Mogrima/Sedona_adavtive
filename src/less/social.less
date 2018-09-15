@@ -4,22 +4,23 @@
 
 .social__link {
   text-decoration: none;
-
-  /* &:hover,
-  &focus {
-    background-color: @hoverblue;
-    text-decoration: none;
-  }
-  &:active {
-    color: fade(@color-textlight, 30%);
-    background-color: @activeblue;
-  } */
 }
 
 .social__icon {
   background-color: #81b3d2;
   path {
     fill: @white;
+  }
+  &:hover,
+  &:focus {
+    background-color: @hoverblue;
+  }
+  &:active {
+    color: fade(@color-textlight, 30%);
+    background-color: @activeblue;
+  }
+  &:active path {
+    fill: fade(@color-textlight, 30%);
   }
   &--twitter {
     padding: 17px 13px;
