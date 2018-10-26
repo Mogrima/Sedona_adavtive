@@ -1,5 +1,20 @@
+.social {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .social__list {
+  display: flex;
+  width: 155px;
   .set-ul();
+  margin: 0 auto;
+}
+
+.social__item {
+  margin-right: 6px;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .social__link {
@@ -26,7 +41,7 @@
     padding: 17px 13px;
   }
   &--facebook {
-    padding: 14px 18px;
+    padding: 15px 18px;
   }
   &--youtube {
     padding: 17px 13px 17px 12px;

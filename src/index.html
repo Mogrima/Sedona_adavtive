@@ -29,7 +29,7 @@
                   <h3 class="features__subtitle">Жилье</h3>
                   <p class="features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
-                <li class="features__item eatures__item--souvenirs">
+                <li class="features__item features__item--souvenirs">
                   <h3 class="features__subtitle">Сувениры</h3>
                   <p class="features__text">Не только китайского, но и местного производства!</p>
                 </li>
@@ -47,9 +47,11 @@
             <div class="advantages__bridge"></div>
           </li>
           <li class="advantages__item advantages__item--three">
-            <h3 class="advantages__subtitle">Не большая площадь</h3>
-            <p class="advantages__number">№ 3</p>
-            <p class="advantages__description">ВСЕ интересные места находятся очень близко</p>
+            <div class="advantages__item-wrapper">
+              <h3 class="advantages__subtitle">Не большая площадь</h3>
+              <p class="advantages__number">№ 3</p>
+              <p class="advantages__description">ВСЕ интересные места находятся очень близко</p>
+            </div>
           </li>
           <li class="advantages__item advantages__item--four">
             <h3 class="advantages__subtitle">Красивая дорога</h3>
@@ -67,13 +69,15 @@
       </div>
     </section>
     <section class="booking">
-      <h2 class="visually-hidden">Подбор гостиницы</h2>
-      <p class="booking__title">Заинтересовались?</p>
-      <p class="booking__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <a href="#" class="button booking__button" disabled>Найти гостиницу</a>
-      <figure class="booking__map map">
-        <img src="img/booking/map-mobile.jpg" width="320" height="350" alt="Карта Аризоны">
-      </figure>
+      <div class="booking__wrapper">
+        <h2 class="visually-hidden">Подбор гостиницы</h2>
+        <p class="booking__title">Заинтересовались?</p>
+        <p class="booking__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a href="#" class="button booking__button" disabled>Найти гостиницу</a>
+         </div>
+        <figure class="booking__map map">
+          <img src="img/booking/map-mobile.jpg" width="320" height="350" alt="Карта Аризоны">
+        </figure>
     </section>
   </main>
   //= template/footer.html

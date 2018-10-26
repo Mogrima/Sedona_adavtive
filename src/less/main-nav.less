@@ -1,14 +1,21 @@
+.main-nav {
+  position: relative;
+  order: -1;
+  width: 320px;
+  margin: 0 auto;
+}
+
 .main-nav__list {
   .set-ul();
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 16px;
+  right: 20px;
   padding: 0;
-  width: 23px;
-  height: 22px;
+  width: 25px;
+  height: 24px;
 
   &::before,
   &::after {
@@ -37,7 +44,7 @@
 .main-nav__link {
   display: block;
   .text(@fz-mobile; @color-textlight);
-  padding: 15px 120px;
+  padding: 15px 90px;
   font-family: @ff-bold;
   text-align: center;
   text-decoration: none;

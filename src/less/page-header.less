@@ -1,4 +1,10 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-header__logo {
+  position: relative;
   .set();
   text-align: center;
 }
@@ -8,8 +14,14 @@
   margin-top: 50px;
 }
 
-.page-header__bg--inner {
+.page-header__bg {
   width: 320px;
+  margin: 0 auto;
+  margin-top: -30px;
+}
+
+.page-header__bg--inner {
+  /* width: 320px; */
   height: 160px;
   background-image: url("../img/page-header/bg-back-mobile@1x.jpg");
   background-position: center center;

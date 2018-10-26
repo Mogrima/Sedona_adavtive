@@ -3,7 +3,40 @@
 }
 
 .features__item {
+  position: relative;
+  padding-left: 70px;
+  padding-right: 20px;
+  text-align: left;
   background-color: @white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    background-repeat: no-repeat;
+  }
+
+  &--accomodation::before {
+    width: 37px;
+    height: 36px;
+
+    background-image: url("../img/house.svg");
+  }
+
+  &--food::before {
+    width: 38px;
+    height: 34px;
+
+    background-image: url("../img/food.svg");
+  }
+
+   &--souvenirs::before {
+    left: 25px;
+    width: 32px;
+    height: 37px;
+    background-image: url("../img/gift.svg");
+  }
 }
 
 .features__subtitle {
