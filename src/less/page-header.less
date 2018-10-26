@@ -16,7 +16,7 @@
 
 .page-header__bg {
   width: 320px;
-  height: 389px;
+  height: 390px;
   margin: 0 auto;
   margin-top: -30px;
   background-image: url("../img/page-header/header-mobile.jpg");
@@ -28,4 +28,13 @@
   background-image: url("../img/page-header/bg-back-mobile@1x.jpg");
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+
+@media (min-width: @tablet-width) {
+  .page-header__bg {
+    width: 768px;
+    height: 520px;
+    background-image: url("../img/page-header/text-index.jpg");
+  }
 }

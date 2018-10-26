@@ -51,3 +51,45 @@
   padding-bottom: 35px;
   .text(@lh: 21px;);
 }
+
+@media (min-width: @tablet-width) {
+  .features {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    box-sizing: border-box;
+    width: 256px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 160px;
+    text-align: center;
+
+    &::before {
+      top: 100px;
+      left: 90px;
+    }
+
+    &--accomodation::before {
+      width: 75px;
+      height: 72px;
+    }
+
+    &--food::before {
+      width: 77px;
+      height: 68px;
+    }
+
+     &--souvenirs::before {
+      left: 95px;
+      width: 64px;
+      height: 75px;
+    }
+  }
+}
