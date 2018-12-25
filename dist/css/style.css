@@ -462,6 +462,7 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 35px;
   }
 }
@@ -534,6 +535,11 @@
 }
 .copyright__icon:active path {
   fill: #b2b2b2;
+}
+@media (min-width: 768px) {
+  .copyright {
+    align-items: flex-end;
+  }
 }
 .feedback-form__list {
   margin: 0;
