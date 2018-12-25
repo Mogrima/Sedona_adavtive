@@ -427,6 +427,19 @@
     width: 458px;
   }
 }
+.map {
+  width: 360px;
+  height: 350px;
+  margin: 0 auto;
+  background-image: url("../img/booking/map-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .map {
+    width: 768px;
+  }
+}
 .page-footer {
   width: 320px;
   margin: 0 auto;
