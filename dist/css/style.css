@@ -160,9 +160,13 @@
   text-align: center;
 }
 .page-main__description {
+  width: 280px;
   margin: 0;
   padding: 0;
+  margin: 0 auto;
   padding-bottom: 23px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 14px;
   color: #333333;
   line-height: 24px;
@@ -844,10 +848,16 @@
   line-height: 26px;
 }
 .photo__list {
+  width: 320px;
   margin: 0;
   padding: 0;
   list-style: none;
-  text-align: center;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+.photo__item {
+  width: 280px;
+  margin: 0 auto;
 }
 .photo__content {
   margin: 0;
@@ -867,6 +877,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 15px;
+  text-align: left;
 }
 .photo__like-link {
   display: block;
