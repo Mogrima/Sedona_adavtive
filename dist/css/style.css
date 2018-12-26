@@ -499,12 +499,26 @@
     width: 648px;
     padding: 0;
   }
+  .booking__title {
+    padding-top: 50px;
+    font-size: 30px;
+  }
   .booking__description {
     padding-left: 105px;
     padding-right: 105px;
   }
   .booking__button {
+    margin-bottom: 60px;
     width: 458px;
+  }
+}
+@media (min-width: 1200px) {
+  .booking__wrapper {
+    width: 1200px;
+  }
+  .booking__description {
+    padding-left: 400px;
+    padding-right: 400px;
   }
 }
 .map {
@@ -518,6 +532,11 @@
 @media (min-width: 768px) {
   .map {
     width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .map {
+    width: 1200px;
   }
 }
 .page-footer {
