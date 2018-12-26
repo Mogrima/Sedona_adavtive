@@ -912,6 +912,14 @@
   margin: 0;
   padding: 0;
   margin-bottom: 37px;
+  padding: 0 23px;
+  line-height: 24px;
+}
+.presentation__video {
+  width: 320px;
+  height: 267px;
+  background-image: url("../img/photo/player/video-mobile.png");
+  background-repeat: no-repeat;
 }
 .modal-send {
   background-color: #ffffff;
