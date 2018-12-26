@@ -564,6 +564,19 @@
     align-items: center;
     margin-bottom: 35px;
   }
+  .page-footer__copyright {
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .page-footer {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-footer__label-sedona {
+    width: 320px;
+  }
 }
 .label-sedona__hashtag {
   font-size: 21px;
@@ -635,9 +648,13 @@
 .copyright__icon:active path {
   fill: #b2b2b2;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .copyright {
-    align-items: flex-end;
+    width: 200px;
+  }
+  .copyright__text {
+    margin-right: 10px;
+    margin-left: auto;
   }
 }
 .feedback-form__list {
