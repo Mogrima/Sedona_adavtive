@@ -872,17 +872,22 @@
   border-top: 1px solid #e5e5e5;
 }
 .photo__title-image {
-  margin-bottom: 9px;
+  margin: 0;
+  padding: 0;
   font-family: 'PT Sans Bold';
+  line-height: 24px;
   color: #000000;
 }
 .photo__image {
+  width: 100%;
   margin-bottom: 20px;
 }
 .photo__author-image {
   margin: 0;
   padding: 0;
   margin-bottom: 15px;
+  text-transform: none;
+  line-height: 24px;
   text-align: left;
 }
 .photo__like-link {
@@ -899,6 +904,44 @@
   font-size: 14px;
   color: #000000;
   line-height: 24px;
+}
+@media (min-width: 768px) {
+  .photo__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 648px;
+  }
+  .photo__item {
+    width: 50%;
+    margin: 0;
+  }
+  .photo__item:first-child {
+    flex-grow: 1;
+    width: 100%;
+  }
+  .photo__content {
+    padding-top: 0;
+    border-top: none;
+  }
+  .photo__image {
+    margin-bottom: -3px;
+  }
+  .photo__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+  }
+  .photo__like-link {
+    margin-bottom: 0;
+  }
+  .photo__capture {
+    margin-left: 20px;
+    padding-top: 20px;
+  }
+  .photo__icon {
+    margin-right: 35px;
+  }
 }
 .presentation {
   width: 320px;
