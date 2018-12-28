@@ -185,6 +185,14 @@
     padding: 0 165px;
     font-size: 21px;
   }
+  .page-main__title--inner {
+    margin-top: 70px;
+    font-size: 30px;
+  }
+  .page-main__description {
+    width: 430px;
+    padding-bottom: 70px;
+  }
 }
 @media (min-width: 1200px) {
   .page-main {
