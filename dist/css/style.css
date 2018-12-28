@@ -77,6 +77,10 @@
     height: 520px;
     background-image: url("../img/page-header/text-index.jpg");
   }
+  .page-header__bg--inner {
+    height: 292px;
+    background-image: url("../img/page-header/sedona-tablet.jpg");
+  }
 }
 @media (min-width: 1200px) {
   .page-header__bg {
