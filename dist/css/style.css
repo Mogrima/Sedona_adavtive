@@ -981,19 +981,28 @@
 .presentation__video {
   width: 320px;
   height: 267px;
-  background-image: url("../img/photo/player/video-mobile.png");
-  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.presentation__video-img {
+  width: 100%;
+  height: auto;
 }
 @media (min-width: 768px) {
   .presentation {
     width: 768px;
+    padding-top: 60px;
     border-top: none;
   }
   .presentation__title {
     font-size: 30px;
   }
   .presentation__description {
+    margin-bottom: 75px;
     padding: 0 170px;
+  }
+  .presentation__video {
+    width: 648px;
+    height: 499px;
   }
 }
 .modal-send {

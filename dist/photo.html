@@ -194,8 +194,13 @@
       <p class="presentation__title">Все еще сомневаетесь?</p>
       <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <!-- Пока изображение вместо видеопрезентации -->
-      <!-- <img src="img/photo/player/video-mobile.png" width="320" height="267" alt="Видеопрезентация Седоны"> -->
-      <div class="presentation__video"></div>
+      <div class="presentation__video">
+        <picture>
+        <source srcset="img/photo/player/video-tablet.jpg" media="(min-width: 768px)">
+          <source srcset="img/photo/player/video-desctop.jpg" media="(min-width: 1200px)">
+        <img class="presentation__video-img" src="img/photo/player/video-mobile.png" width="320" height="267" alt="Видеопрезентация Седоны">
+        </picture>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
