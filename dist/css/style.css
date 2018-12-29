@@ -955,6 +955,35 @@
     margin-right: 35px;
   }
 }
+@media (min-width: 1200px) {
+  .photo__list {
+    width: 1200px;
+  }
+  .photo__item {
+    width: 33.33%;
+  }
+  .photo__content {
+    position: relative;
+  }
+  .photo__info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .photo__title-image {
+    color: #ffffff;
+  }
+  .photo__author-image {
+    color: #ffffff;
+  }
+  .photo__like-icon path {
+    fill: #ffffff;
+  }
+  .photo__likes {
+    color: #ffffff;
+  }
+}
 .presentation {
   width: 320px;
   margin: 0 auto;
