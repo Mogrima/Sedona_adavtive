@@ -599,10 +599,17 @@
   .page-footer {
     width: 960px;
   }
-}
-@media (min-width: 1200px) {
+  .page-footer--inner {
+    width: 1200px;
+  }
   .page-footer__label-sedona {
     width: 320px;
+  }
+  .page-footer__label-sedona--inner {
+    width: 400px;
+  }
+  .page-footer__wrapper--inner {
+    padding-top: 120px;
   }
 }
 .label-sedona__hashtag {
