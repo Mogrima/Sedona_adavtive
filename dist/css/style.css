@@ -1058,6 +1058,7 @@
   }
 }
 .modal-send {
+  display: none;
   background-color: #ffffff;
 }
 .modal-send__title {
