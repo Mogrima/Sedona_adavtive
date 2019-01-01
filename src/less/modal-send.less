@@ -1,5 +1,8 @@
 .modal-send {
   display: none;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
   background-color: @white;
 }
 
@@ -13,6 +16,7 @@
 }
 
 .modal-sent__text {
+  padding: 0 50px;
   line-height: 24px;
   text-align: center;
   &--failure {
@@ -23,7 +27,15 @@
   }
 }
 
+.modal-send__button {
+  width: auto;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .modal-sent__button-wrapper {
+  box-sizing: border-box;
+  width: 320px;
   padding: 20px;
-  background-color: #d5d5d5;
+  background-color: #f2f2f2;
 }
