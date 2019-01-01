@@ -113,9 +113,11 @@
 }
 
 .feedbacl-form__textarea {
+  display: block;
   box-sizing: border-box;
-  width: 278px;
+  width: 279px;
   height: 160px;
+  margin: 0 auto;
   margin-bottom: 25px;
   padding: 20px 30px 20px 22px;
   font-family: @ff-bold;
@@ -134,11 +136,12 @@
 }
 
 .feedback__button {
-  margin-bottom: 35px;
+
 }
 
 .feedback-form__impression-list {
   .set-ul();
+  margin-left: 20px;
 }
 
 .feedback-form__impression-label {
@@ -195,6 +198,7 @@
 
 .feedbacl-form__attraction-list {
   .set-ul();
+  margin-left: 20px;
 }
 
 .feedbacl-form__attraction-label {
@@ -203,6 +207,9 @@
   margin-bottom: 55px;
   padding-left: 80px;
   cursor: pointer;
+  &--last {
+    margin-bottom: 15px;
+  }
 }
 
 .feedback-form__attraction-indicator {
@@ -241,5 +248,6 @@
 }
 
 .feedback__necessary {
+  display: none;
   .text();
 }
