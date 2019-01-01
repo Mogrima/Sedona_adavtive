@@ -21,6 +21,7 @@
 
 .feedback-form__input-wrapper {
   display: flex;
+  flex-wrap: wrap;
   width: 280px;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -35,6 +36,49 @@
   margin-right: 0px;
   .text();
 
+  &--full {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  &--phone {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -52px;
+      right: 0;
+
+      width: 52px;
+      height: 52px;
+
+      background-color: #e6e6e6;
+      background-image: url("../img/icons/phone-receiver.svg");
+      background-repeat: no-repeat;
+      background-size: 18px 18px;
+      background-position: center;
+    }
+  }
+
+  &--mail {
+     position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -52px;
+      right: 0;
+
+      width: 52px;
+      height: 52px;
+
+      background-color: #e6e6e6;
+      background-image: url("../img/icons/close-envelope.svg");
+      background-repeat: no-repeat;
+      background-size: 18px 18px;
+      background-position: center;
+    }
+  }
+
   &--bold {
     font-family: @ff-bold;
   .text(@fz-mobile; @color-title;);
@@ -48,6 +92,11 @@
   padding: 18px 57px 18px 21px;
   background-color: #f2f2f2;
   border: none;
+
+  &--full {
+    width: 100%;
+  }
+
   &::placeholder {
     font-family: @ff-bold;
   .text(@fz-mobile; @color-title;);

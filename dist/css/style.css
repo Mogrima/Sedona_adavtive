@@ -713,6 +713,7 @@
 }
 .feedback-form__input-wrapper {
   display: flex;
+  flex-wrap: wrap;
   width: 280px;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -727,6 +728,42 @@
   color: #333333;
   line-height: 26px;
 }
+.feedback-form__label--full {
+  width: 100%;
+  margin-left: 20px;
+}
+.feedback-form__label--phone {
+  position: relative;
+}
+.feedback-form__label--phone::before {
+  content: "";
+  position: absolute;
+  bottom: -52px;
+  right: 0;
+  width: 52px;
+  height: 52px;
+  background-color: #e6e6e6;
+  background-image: url("../img/icons/phone-receiver.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: center;
+}
+.feedback-form__label--mail {
+  position: relative;
+}
+.feedback-form__label--mail::before {
+  content: "";
+  position: absolute;
+  bottom: -52px;
+  right: 0;
+  width: 52px;
+  height: 52px;
+  background-color: #e6e6e6;
+  background-image: url("../img/icons/close-envelope.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: center;
+}
 .feedback-form__label--bold {
   font-family: 'PT Sans Bold';
   font-size: 18px;
@@ -740,6 +777,9 @@
   padding: 18px 57px 18px 21px;
   background-color: #f2f2f2;
   border: none;
+}
+.feedback-form__input--full {
+  width: 100%;
 }
 .feedback-form__input::-webkit-input-placeholder {
   font-family: 'PT Sans Bold';
