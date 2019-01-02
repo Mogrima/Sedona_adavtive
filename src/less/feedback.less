@@ -251,3 +251,39 @@
   display: none;
   .text();
 }
+
+@media (min-width: @tablet-width) {
+  .feedback-form__subtitle {
+    border-top: none;
+  }
+
+  .feedback-form__input-wrapper {
+    width: 100%;
+  }
+
+  .feedbacl-form__attraction-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 460px;
+    margin: 0 auto;
+  }
+
+  .feedbacl-form__textarea {
+    width: 100%;
+  }
+
+  .feedback-form__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .feedback__button {
+    margin: 0;
+  }
+
+  .feedback__necessary {
+    display: block;
+    align-self: center;
+  }
+}
