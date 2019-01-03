@@ -27,6 +27,7 @@
   line-height: 26px;
   font-family: 'PT Sans Bold';
   text-decoration: none;
+  text-transform: uppercase;
   background-color: #81b3d2;
   border: none;
   cursor: pointer;
@@ -41,6 +42,14 @@
 }
 .button:disabled {
   background-color: #e5e5e5;
+}
+@media (min-width: 768px) {
+  .button {
+    width: 340px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 21px;
+  }
 }
 .page-header {
   display: flex;
