@@ -967,7 +967,7 @@
     margin-bottom: 30px;
   }
   .feedback-form__impression-list {
-    margin-right: 0;
+    margin-left: 0;
   }
   .feedbacl-form__attraction-list {
     display: flex;
@@ -998,10 +998,16 @@
     width: 648px;
     margin: 0 auto;
   }
+  .feedback-form__subtitle {
+    margin-bottom: 60px;
+  }
   .feedback-form__subtitle--center {
     padding-left: 120px;
     padding-right: 120px;
     text-align: center;
+  }
+  .feedback-form__subtitle--contact {
+    margin-bottom: 23px;
   }
   .feedback-form__subtitle--attraction {
     margin-bottom: 70px;
