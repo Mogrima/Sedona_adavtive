@@ -5,9 +5,27 @@
     margin: 0 auto;
   }
 
+  .feedback-form__subtitle {
+
+    &--center {
+      padding-left: 120px;
+      padding-right: 120px;
+      text-align: center;
+    }
+
+    &--attraction {
+      margin-bottom: 70px;
+    }
+
+    &--emotion {
+      margin-bottom: 60px;
+    }
+  }
+
   .feedback-form__wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
   }
 
@@ -15,10 +33,16 @@
     width: 100%;
   }
 
+  .feedback-form__item  {
+    &--attraction {
+      width: 210px;
+    }
+  }
+
   .feedback-form__list-name {
     box-sizing: border-box;
     width: 50%;
-    border-left: 1px solid #e5e5e5;
+    /* border-left: 1px solid #e5e5e5; */
   }
 
   .feedback-form__list-impression {

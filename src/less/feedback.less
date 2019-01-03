@@ -11,7 +11,7 @@
   display: block;
   width: 100%;
   margin-bottom: 26px;
-  padding-top: 22px;
+  /* padding-top: 22px; */
   font-family: @ff-bold;
   .text(@fz-mobile; @color-title;);
   text-align: center;
@@ -253,12 +253,28 @@
 }
 
 @media (min-width: @tablet-width) {
+  .feedback-form__list {
+    margin-bottom: 50px;
+  }
+
   .feedback-form__subtitle {
+    font-size: @fz-title;
+    text-align: left;
     border-top: none;
+  }
+
+  .feedback-form__label {
+    /* box-sizing: border-box; */
+    /* width: 200px; */
   }
 
   .feedback-form__input-wrapper {
     width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .feedback-form__impression-list {
+    margin-right: 0;
   }
 
   .feedbacl-form__attraction-list {
@@ -271,6 +287,7 @@
 
   .feedbacl-form__textarea {
     width: 100%;
+    margin-bottom: 0;
   }
 
   .feedback-form__footer {
