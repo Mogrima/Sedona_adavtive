@@ -1,5 +1,11 @@
+/* Временно, чтобы лучше было видно модальные окна */
+
+body {
+  background-color: #000000;
+}
+
 .modal-send {
-  display: none;
+  display: block;
   box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
@@ -38,4 +44,11 @@
   width: 320px;
   padding: 20px;
   background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-send__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
