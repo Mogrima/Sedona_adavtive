@@ -1,11 +1,11 @@
 /* Временно, чтобы лучше было видно модальные окна */
 
-body {
+/* body {
   background-color: #000000;
-}
+} */
 
 .modal-send {
-  display: block;
+  display: none;
   box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
@@ -41,7 +41,7 @@ body {
 
 .modal-sent__button-wrapper {
   box-sizing: border-box;
-  width: 320px;
+  width: 100%;
   padding: 20px;
   background-color: #f2f2f2;
 }
@@ -52,6 +52,10 @@ body {
       width: 400px;
       padding-bottom: 50px;
     }
+
+    &--success {
+      width: 640px;
+    }
   }
   .modal-send__title {
     padding-left: 90px;
@@ -60,8 +64,24 @@ body {
     line-height: 40px;
   }
 
+  .modal-sent__text {
+    &--success {
+      padding-right: 110px;
+      padding-left: 110px;
+    }
+  }
+
   .modal-send__button {
     padding-right: 110px;
     padding-left: 110px;
+
+    &--success {
+      width: 460px;
+    }
+  }
+
+  .modal-sent__button-wrapper {
+    padding-bottom: 40px;
+    padding-top: 40px;
   }
 }
