@@ -51,6 +51,11 @@
     font-size: 21px;
   }
 }
+@media (min-width: 1200px) {
+  .button {
+    width: 480px;
+  }
+}
 .page-header {
   display: flex;
   flex-direction: column;
