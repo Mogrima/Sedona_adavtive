@@ -963,10 +963,6 @@
     text-align: left;
     border-top: none;
   }
-  .feedback-form__label {
-    /* box-sizing: border-box; */
-    /* width: 200px; */
-  }
   .feedback-form__input-wrapper {
     width: 100%;
     margin-bottom: 30px;
@@ -998,6 +994,37 @@
   }
 }
 @media (min-width: 1200px) {
+  .feedback-form__list {
+    margin-bottom: 70px;
+  }
+  .feedback-form__input-wrapper--contact {
+    flex-wrap: nowrap;
+    width: 480px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .feedback-form__label--full {
+    align-self: center;
+    width: auto;
+    margin-left: 0;
+    margin-right: 14px;
+  }
+  .feedback-form__label--phone::before {
+    bottom: -13px;
+    right: -333px;
+  }
+  .feedback-form__label--mail::before {
+    bottom: -13px;
+    right: -333px;
+  }
+  .feedback-form__input {
+    align-self: flex-start;
+    width: auto;
+  }
+  .feedback-form__input--full {
+    width: 320px;
+  }
   .feedbacl-form__attraction-list {
     width: 960px;
   }
@@ -1052,6 +1079,14 @@
   .feedback-form__subtitle--center {
     padding-left: 280px;
     padding-right: 280px;
+  }
+  .feedback-form__subtitle--contact {
+    margin-bottom: 70px;
+  }
+  .feedback-form__wrapper-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .feedback-form__list-name {
     width: 40%;
