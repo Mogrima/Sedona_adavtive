@@ -992,6 +992,11 @@
     align-self: center;
   }
 }
+@media (min-width: 1200px) {
+  .feedbacl-form__attraction-list {
+    width: 960px;
+  }
+}
 @media (min-width: 768px) {
   .feedback-form {
     width: 648px;
@@ -1038,6 +1043,10 @@
 @media (min-width: 1200px) {
   .feedback-form {
     width: 960px;
+  }
+  .feedback-form__subtitle--center {
+    padding-left: 280px;
+    padding-right: 280px;
   }
   .feedback-form__list-name {
     width: 40%;
