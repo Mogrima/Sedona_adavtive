@@ -997,6 +997,9 @@
   .feedback-form__list {
     margin-bottom: 70px;
   }
+  .feedback-form__input-wrapper {
+    margin-bottom: 20px;
+  }
   .feedback-form__input-wrapper--contact {
     flex-wrap: nowrap;
     width: 480px;
@@ -1282,11 +1285,22 @@
   background-color: #000000;
 } */
 .modal-send {
-  display: none;
+  position: fixed;
+  left: 50%;
   box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
+  margin-left: -160px;
   background-color: #ffffff;
+}
+.modal-send--failure {
+  display: none;
+  bottom: 230px;
+  padding-bottom: 50px;
+}
+.modal-send--success {
+  display: none;
+  bottom: 340px;
 }
 .modal-send__title {
   margin: 0;
@@ -1324,10 +1338,12 @@
 @media (min-width: 768px) {
   .modal-send--failure {
     width: 400px;
-    padding-bottom: 50px;
+    margin-left: -200px;
   }
   .modal-send--success {
+    bottom: 500px;
     width: 640px;
+    margin-left: -320px;
   }
   .modal-send__title {
     padding-left: 90px;
